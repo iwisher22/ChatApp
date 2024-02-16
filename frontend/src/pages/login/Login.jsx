@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 const Login = () => {
 	return (
@@ -6,7 +6,7 @@ const Login = () => {
 			<div className="w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0">
 				<h1 className="text-3xl font-semibold text-center text-gray-300">
 					Login
-					<span className="text-blue-500">ChatApp</span>
+					<span className="text-blue-500"> ChatApp</span>
 				</h1>
 				<form>
 					<div>
@@ -29,11 +29,11 @@ const Login = () => {
 							className="w-full input input-bordered h-10"
 						/>
 					</div>
-					<a
-						href="/signup"
+					<Link
+						to="/signup"
 						className="text-sm  hover:underline hover:text-blue-600 mt-2 inline-block">
 						{"Don't"} have an account?
-					</a>
+					</Link>
 					<div>
 						<button className="btn btn-block btn-sm mt-2">Login</button>
 					</div>
