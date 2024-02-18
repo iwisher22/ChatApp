@@ -7,17 +7,16 @@ const messageSchema = new mongoose.Schema(
 			ref: "User",
 			required: true,
 		},
-
-		recieverId: {
+		receiverId: {
 			type: mongoose.Schema.Types.ObjectId,
 			ref: "User",
 			required: true,
 		},
-
 		message: {
 			type: String,
 			required: true,
 		},
+		// createdAt, updatedAt
 	},
 	{ timestamps: true }
 );
